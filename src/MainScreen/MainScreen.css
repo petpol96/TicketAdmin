@@ -1,0 +1,58 @@
+.mainScreenHeader {
+  background-color: #06283d;
+  color: #dff6ff;
+}
+.mainScreenHeaderTitle {
+  margin: 0;
+}
+.mainScreenTicketHolder {
+  margin-top: 5px;
+}
+.ticketCard {
+  height: 300px;
+  width: 250px;
+  background-color: #dff6ff;
+  border: 1px solid #06283d;
+  border-radius: 2px;
+}
+.ticketCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 10px;
+}
+.ticketCardStatusBar {
+  height: 300px;
+  width: 10px;
+  background-color: #06283d;
+  float: left;
+}
+.ticketCardInfo {
+  height: 300px;
+  width: 240px;
+  background-color: #dff6ff;
+  float: left;
+}
+.ticketCardInfo p {
+  margin: 6px;
+}
+.ticketCardInfo h4 {
+  margin-left: 6px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.imageHolder{    
+    height: 30px;
+    margin-top: 20px;
+}

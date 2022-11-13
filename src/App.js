@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import LoginScreen from "./LoginScreen/LoginScreen";
+import MainScreen from "./MainScreen/MainScreen";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [user, setUser] = useState(null)
+  return user?<MainScreen user={user} setUser={setUser}/>:<LoginScreen setUser={setUser}/>
+    
 }
 
 export default App;
